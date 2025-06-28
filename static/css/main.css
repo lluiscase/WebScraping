@@ -2,12 +2,12 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-h1{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1{
     font-size: 5rem;
 }
 
@@ -23,4 +23,23 @@ table tr:nth-child(odd)  {
 
 td{
     font-size: 1.5rem;
+}
+
+input{
+    width: 50rem;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+button{
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: rgb(234, 204, 31);
+    border: none;
+}
+
+button:hover{
+    border: 5px solid yellow;
 }
