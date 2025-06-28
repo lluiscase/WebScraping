@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>WebScraping</title>
+{% endblock %}
+{% block body %}
+    <div class="table">
+        <h1>Resultados</h1>
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Link do produto</th>
+            </tr>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.name }}</td>
+                <td>{{ task.price }}</td>
+                <td><a href="https://{{ task.url }}" target="_blank">Ver Produto</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

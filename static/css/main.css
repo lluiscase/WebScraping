@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+th{
+    font-size: 2rem;
+    background-color: cadetblue;
+    color: white;
+}
+
+table tr:nth-child(odd)  {
+  background-color: #c9c9c9;
+}
+
+td{
+    font-size: 1.5rem;
+}
